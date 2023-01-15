@@ -11,11 +11,3 @@ def test_funct2_1(value):
     assert response.status_code == 200, print(response.status_code)
 
 
-cred = ("admin", "admin123")
-
-session = requests.Session()
-session.auth = cred
-
-first_resp = session.get("https://www.aqa.science/users/3032/")
-print(first_resp.text)
-
